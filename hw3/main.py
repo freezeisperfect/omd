@@ -9,4 +9,5 @@ if __name__ == '__main__':
     vec = CountVectorizer()
     count_matrix = vec.fit_transform(corpus)
     print(vec.get_feature_names())
+
     print(count_matrix)
