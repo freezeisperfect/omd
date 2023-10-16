@@ -44,7 +44,8 @@ class CountVectorizer:
 
     get_features_vocabulary():
         Составление словаря из встретившихся слов на основе _raw.
-        В качестве ключа - уникальное слово, в качестве значения - индекс слова.
+        В качестве ключа - уникальное слово, в качестве значения -
+        индекс слова.
     """
     def __init__(self) -> None:
         self._raw = None
@@ -162,14 +163,3 @@ class CountVectorizer:
                 if word not in vocabulary:
                     vocabulary[word] = len(vocabulary)
         return vocabulary
-
-
-if __name__ == '__main__':
-    corpus = [
-        'Crock Pot Pasta Never boil pasta again',
-        'Pasta Pomodoro Fresh ingredients Parmesan to taste'
-    ]
-    vec = CountVectorizer()
-    count_matrix = vec.fit_transform(corpus)
-    print(vec.get_feature_names())
-    print(count_matrix)
