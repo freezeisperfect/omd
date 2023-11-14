@@ -1,0 +1,11 @@
+python -m unittest -v
+test_fit_transform_equals (test_one_hot_encoder.TestFitTransform.test_fit_transform_equals) ... ok
+test_fit_transform_equals_scnd (test_one_hot_encoder.TestFitTransform.test_fit_transform_equals_scnd) ... ok
+test_fit_transform_istrue (test_one_hot_encoder.TestFitTransform.test_fit_transform_istrue) ... ok
+test_type_error (test_one_hot_encoder.TestFitTransform.test_type_error) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+OK
+
